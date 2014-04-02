@@ -1,3 +1,4 @@
+@if $use-media == true{
 // Media objects
 // Source: http://stubbornella.org/content/?p=497
 // --------------------------------------------------
@@ -52,4 +53,6 @@
 .media-list {
   margin-left: 0;
   list-style: none;
+}
+
 }

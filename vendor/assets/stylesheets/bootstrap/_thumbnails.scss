@@ -1,3 +1,4 @@
+@if $use-thumbnails == true{
 //
 // Thumbnails
 // --------------------------------------------------
@@ -50,4 +51,6 @@ a.thumbnail:focus {
 .thumbnail .caption {
   padding: 9px;
   color: $gray;
+}
+
 }

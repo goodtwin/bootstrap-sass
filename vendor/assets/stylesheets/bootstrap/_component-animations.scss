@@ -1,3 +1,4 @@
+@if $use-component-animations == true{
 //
 // Component animations
 // --------------------------------------------------
@@ -19,4 +20,6 @@
   &.in {
     height: auto;
   }
+}
+
 }

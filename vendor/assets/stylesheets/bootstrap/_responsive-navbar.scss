@@ -1,3 +1,4 @@
+@if $use-responsive-navbar == true{
 //
 // Responsive: Navbar
 // --------------------------------------------------
@@ -185,5 +186,7 @@
     height: auto !important;
     overflow: visible !important;
   }
+
+}
 
 }

@@ -4,3 +4,6 @@ bootstrap.css
 bootstrap-responsive.css
 Gemfile.lock
 .rvmrc
+node_modules/
+.node-version
+dist/

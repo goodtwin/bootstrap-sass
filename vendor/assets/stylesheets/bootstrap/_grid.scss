@@ -1,3 +1,4 @@
+@if $use-grid == true{
 //
 // Grid system
 // --------------------------------------------------
@@ -18,4 +19,6 @@
 [class*="span"].pull-right,
 .row-fluid [class*="span"].pull-right {
   float: right;
+}
+
 }

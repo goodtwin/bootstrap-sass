@@ -1,3 +1,4 @@
+@if $use-labels-badges == true{
 //
 // Labels and badges
 // --------------------------------------------------
@@ -80,4 +81,6 @@ a {
   .badge {
     top: 0;
   }
+}
+
 }

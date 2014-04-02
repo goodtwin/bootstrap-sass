@@ -1,1 +1,24 @@
+/*!
+* Tell me what (responsive stuff) you want, what (responsive stuff) you really, really want.
+*/
+
+$use-responsive-utilities:	false;
+
+
+// MEDIA QUERIES
+// Large desktops
+$use-responsive-1200px-min:   false;
+
+// Tablets to regular desktops
+$use-responsive-768px-979px:  false;
+
+// Phones to portrait tablets and narrow desktops
+$use-responsive-767px-max:	false;
+
+
+// RESPONSIVE NAVBAR
+// From 979px and below, show a button to toggle navbar contents
+$use-responsive-navbar:	   false;
+
+@import "defaults";
 @import "bootstrap/responsive";

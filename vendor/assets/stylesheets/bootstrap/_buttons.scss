@@ -1,3 +1,4 @@
+@if $use-buttons == true{
 //
 // Buttons
 // --------------------------------------------------
@@ -225,4 +226,6 @@ input[type="submit"].btn {
 .btn-link[disabled]:focus {
   color: $grayDark;
   text-decoration: none;
+}
+
 }

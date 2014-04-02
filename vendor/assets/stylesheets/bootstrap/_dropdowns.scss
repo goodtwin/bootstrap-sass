@@ -1,3 +1,4 @@
+@if $use-dropdowns == true{
 //
 // Dropdown menus
 // --------------------------------------------------
@@ -245,4 +246,6 @@
   z-index: 1051;
   margin-top: 2px; // give it some space to breathe
   @include border-radius($baseBorderRadius);
+}
+
 }

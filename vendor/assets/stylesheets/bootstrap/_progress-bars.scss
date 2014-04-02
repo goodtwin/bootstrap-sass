@@ -1,3 +1,4 @@
+@if $use-progress-bars == true{
 //
 // Progress bars
 // --------------------------------------------------
@@ -119,4 +120,6 @@
 }
 .progress-warning.progress-striped .bar, .progress-striped .bar-warning {
   @include gradient-striped(lighten($orange, 15%));
+}
+
 }

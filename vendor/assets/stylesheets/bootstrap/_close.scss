@@ -1,3 +1,4 @@
+@if $use-close == true{
 //
 // Close icons
 // --------------------------------------------------
@@ -29,4 +30,6 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+}
+
 }

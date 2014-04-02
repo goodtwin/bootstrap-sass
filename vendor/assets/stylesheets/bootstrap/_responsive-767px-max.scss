@@ -1,3 +1,4 @@
+@if $use-responsive-767px-max == true{
 //
 // Responsive: Landscape phone to desktop/tablet
 // --------------------------------------------------
@@ -189,5 +190,7 @@
   .carousel-caption {
     position: static;
   }
+
+}
 
 }

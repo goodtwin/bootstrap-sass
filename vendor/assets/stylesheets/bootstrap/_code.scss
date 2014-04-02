@@ -1,3 +1,4 @@
+@if $use-code == true{
 //
 // Code (inline and blocK)
 // --------------------------------------------------
@@ -58,4 +59,6 @@ pre {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
+}
+
 }

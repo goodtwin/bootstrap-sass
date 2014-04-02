@@ -1,3 +1,4 @@
+@if $use-forms == true{
 //
 // Forms
 // --------------------------------------------------
@@ -686,4 +687,6 @@ legend + .control-group {
   .form-actions {
     padding-left: $horizontalComponentOffset;
   }
+}
+
 }

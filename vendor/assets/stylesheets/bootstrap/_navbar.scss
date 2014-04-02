@@ -1,3 +1,4 @@
+@if $use-navbar == true{
 //
 // Navbars (Redux)
 // --------------------------------------------------
@@ -493,5 +494,7 @@
   .btn-navbar {
     @include buttonBackground(darken($navbarInverseBackgroundHighlight, 5%), darken($navbarInverseBackground, 5%));
   }
+
+}
 
 }

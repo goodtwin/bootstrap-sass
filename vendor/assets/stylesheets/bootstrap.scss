@@ -1,1 +1,53 @@
+/*!
+ * Tell me what you want, what you really, really want.
+ */
+
+// Grid system and page structure
+$use-scaffolding:	 		true; // Be very sure if you say `false`
+$use-grid:					true;
+$use-layouts:	 			true; // Be very sure if you say `false`
+
+// Base CSS
+$use-type:	 	   		true; // Be very sure if you say `false`
+$use-code:	 	   		true;
+$use-forms:	 	  		true;
+$use-tables:	 	 		true;
+
+// Components: common
+$use-sprites:	 			true; // Be very sure if you say `false`
+$use-dropdowns:	   		true;
+$use-wells:	 	  		true;
+$use-component-animations:	true;
+$use-close:	 	  		true;
+
+// Components: Buttons & Alerts
+$use-buttons:	 	  	  true;
+$use-button-groups:	 	  true;
+$use-alerts:	 	  	   true; // Note: alerts share common CSS with buttons and thus have styles in buttons
+
+// Components: Nav
+$use-navs:	 	  		 true;
+$use-navbar:	 	  	   true;
+$use-breadcrumbs:	 	    true;
+$use-pagination:			  true;
+$use-pager:				   true;
+
+// Components: Popovers
+$use-modals:				  true;
+$use-tooltip:				 true;
+$use-popovers:				true;
+
+// Components: Misc
+$use-thumbnails:			  true;
+$use-media:				   true;
+$use-labels-badges:		   true;
+$use-progress-bars:		   true;
+$use-accordion:			   true;
+$use-carousel:			    true;
+$use-hero-unit:			   true;
+
+// Utility classes
+$use-utilities:			   true; // Has to be last to override when necessary
+
+@import "defaults";
 @import "bootstrap/bootstrap";

@@ -1,3 +1,4 @@
+@if $use-responsive-utilities == true{
 //
 // Responsive: Utility classes
 // --------------------------------------------------
@@ -71,4 +72,6 @@
 // Uses box-sizing mixin, so must be defined here
 .input-block-level {
   @include input-block-level();
+}
+
 }

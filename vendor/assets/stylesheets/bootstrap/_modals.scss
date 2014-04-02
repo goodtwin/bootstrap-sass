@@ -1,3 +1,4 @@
+@if $use-modals == true{
 //
 // Modals
 // --------------------------------------------------
@@ -92,4 +93,6 @@
   .btn-block + .btn-block {
     margin-left: 0;
   }
+}
+
 }

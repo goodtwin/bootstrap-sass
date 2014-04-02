@@ -1,3 +1,4 @@
+@if $use-responsive-768px-979px == true{
 //
 // Responsive: Tablet to desktop
 // --------------------------------------------------
@@ -15,5 +16,7 @@
   @include grid-input($gridColumnWidth768, $gridGutterWidth768);
 
   // No need to reset .thumbnails here since it's the same $gridGutterWidth
+
+}
 
 }

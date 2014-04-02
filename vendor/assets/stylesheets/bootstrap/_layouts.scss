@@ -1,3 +1,4 @@
+@if $use-layouts == true{
 //
 // Layouts
 // --------------------------------------------------
@@ -13,4 +14,6 @@
   padding-right: $gridGutterWidth;
   padding-left: $gridGutterWidth;
   @include clearfix();
+}
+
 }

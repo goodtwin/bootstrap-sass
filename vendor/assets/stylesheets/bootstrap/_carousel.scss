@@ -1,3 +1,4 @@
+@if $use-carousel == true{
 //
 // Carousel
 // --------------------------------------------------
@@ -155,4 +156,6 @@
 }
 .carousel-caption p {
   margin-bottom: 0;
+}
+
 }

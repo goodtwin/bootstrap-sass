@@ -1,3 +1,4 @@
+@if $use-scaffolding == true{
 //
 // Scaffolding
 // --------------------------------------------------
@@ -50,4 +51,6 @@ a:focus {
 // Perfect circle
 .img-circle {
   @include border-radius(500px); // crank the border-radius so it works with most reasonably sized images
+}
+
 }
