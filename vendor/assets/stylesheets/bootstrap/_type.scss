@@ -3,6 +3,55 @@
 // Typography
 // --------------------------------------------------
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Source Sans Pro Light Italic'), local('SourceSansPro-LightIt'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/fpTVHK8qsXbIeTHTrnQH6H7XMO6S-yJpg1torQFmnv33rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/M2Jd71oPJhLKp0zdtTvoM_bce-VcyLJMRR1FC9qWbU8.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold Italic'), local('SourceSansPro-SemiboldIt'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/fpTVHK8qsXbIeTHTrnQH6J4LxuTxC3JbLqy8IUt0K1T3rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/fpTVHK8qsXbIeTHTrnQH6PgYMAt3u4NmhhzLLLPJ5qH3rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+}
+
 
 // Body text
 // -------------------------
@@ -24,7 +73,7 @@ p {
 // Ex: 14px base font * 85% = about 12px
 small   { font-size: 85%; }
 
-strong  { font-weight: bold; }
+strong  { font-weight: 700; }
 em      { font-style: italic; }
 cite    { font-style: normal; }
 
@@ -75,18 +124,21 @@ h1,
 h2,
 h3 { line-height: $baseLineHeight * 2; }
 
-h1 { font-size: $baseFontSize * 2.75; } // ~38px
-h2 { font-size: $baseFontSize * 2.25; } // ~32px
-h3 { font-size: $baseFontSize * 1.75; } // ~24px
-h4 { font-size: $baseFontSize * 1.25; } // ~18px
-h5 { font-size: $baseFontSize; }
-h6 { font-size: $baseFontSize * 0.85; } // ~12px
+h1 { font-size: $baseFontSize * 3.375; } // ~54px
+h2 { font-size: $baseFontSize * 2; }     // ~32px
+h3 { font-size: $baseFontSize * 2; }     // ~32px
+h4 { font-size: $baseFontSize * 1.5; }   // ~24px
+h5 { font-size: $baseFontSize * 1.5; }   // ~24px
+h6 { font-size: $baseFontSize }          // ~16px
 
 h1 small { font-size: $baseFontSize * 1.75; } // ~24px
 h2 small { font-size: $baseFontSize * 1.25; } // ~18px
 h3 small { font-size: $baseFontSize; }
 h4 small { font-size: $baseFontSize; }
 
+h2,
+h4 { font-weight: 400; }
+h6 { font-weight: 600; }
 
 // Page header
 // -------------------------
@@ -94,7 +146,7 @@ h4 small { font-size: $baseFontSize; }
 .page-header {
   padding-bottom: ($baseLineHeight / 2) - 1;
   margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
-  border-bottom: 1px solid $grayLighter;
+  border-bottom: 1px solid $grayDarker;
 }
 
 
@@ -112,9 +164,19 @@ ul ol,
 ol ol,
 ol ul {
   margin-bottom: 0;
+  margin-left: $baseLineHeight;
 }
 li {
-  line-height: $baseLineHeight;
+  line-height: $baseLineHeight * 1.25;
+}
+ul ul > li {
+    list-style-type: none;
+
+    &:before {
+        content: '-';
+        display: inline-block;
+        margin-right: $baseLineHeight / 2;
+    }
 }
 
 // Remove default list styles
@@ -132,8 +194,8 @@ ol.inline {
   > li {
     display: inline-block;
     @include ie7-inline-block();
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: $baseLineHeight / 4;
+    padding-right: $baseLineHeight / 4;
   }
 }
 
@@ -146,10 +208,13 @@ dd {
   line-height: $baseLineHeight;
 }
 dt {
-  font-weight: bold;
+  font-weight: 600;
+  color: $grayLighter;
+  margin-bottom: $baseLineHeight / 4;
 }
 dd {
-  margin-left: $baseLineHeight / 2;
+  margin-left: 0;
+  margin-bottom: $baseLineHeight;
 }
 // Horizontal layout (like forms)
 .dl-horizontal {
@@ -174,7 +239,6 @@ hr {
   margin: $baseLineHeight 0;
   border: 0;
   border-top: 1px solid $hrBorder;
-  border-bottom: 1px solid $white;
 }
 
 // Abbreviations and acronyms

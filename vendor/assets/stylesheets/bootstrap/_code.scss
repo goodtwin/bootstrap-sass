@@ -10,16 +10,16 @@ pre {
   padding: 0 3px 2px;
   @include font-family-monospace;
   font-size: $baseFontSize - 2;
-  color: $grayDark;
+  color: $grayLighter;
   @include border-radius(3px);
 }
 
 // Inline code
 code {
   padding: 2px 4px;
-  color: #d14;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
+  color: $infoText;
+  background-color: $grayDarker;
+  border: 1px solid $grayDarker;
   white-space: nowrap;
 }
 
@@ -34,9 +34,8 @@ pre {
   word-wrap: break-word;
   white-space: pre;
   white-space: pre-wrap;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc; // fallback for IE7-8
-  border: 1px solid rgba(0,0,0,.15);
+  background-color: $grayDarker;
+  border: 1px solid $grayDarker; // fallback for IE7-8
   @include border-radius($baseBorderRadius);
 
   // Make prettyprint styles more spaced out for readability

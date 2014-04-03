@@ -9,6 +9,10 @@ module.exports = function( grunt ) {
 			reload: {
 				files: ['vendor/assets/stylesheets/**/*.scss'],
 				tasks: 'compile'
+			},
+			dev: {
+				files: ['vendor/assets/stylesheets/**/*.scss', 'docs/assets/css/docs.css'],
+				tasks: 'dev'
 			}
 		},
 
@@ -121,5 +125,7 @@ module.exports = function( grunt ) {
 	grunt.registerTask('dist', ['clean:dist', 'copy:dist', 'compile', 'cssmin:dist']);
 
 	grunt.registerTask('build', ['dist', 'clean:ui', 'copy:ui', 'shell:uibuild']);
+
+	grunt.registerTask('dev', ['clean:dist', 'copy:dist', 'compile', 'clean:ui', 'copy:ui', 'shell:uibuild']);
 
 };
