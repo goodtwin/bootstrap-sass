@@ -11,7 +11,6 @@ pre {
   @include font-family-monospace;
   font-size: $baseFontSize - 2;
   color: $grayLighter;
-  @include border-radius(3px);
 }
 
 // Inline code
@@ -36,7 +35,6 @@ pre {
   white-space: pre-wrap;
   background-color: $grayDarker;
   border: 1px solid $grayDarker; // fallback for IE7-8
-  @include border-radius($baseBorderRadius);
 
   // Make prettyprint styles more spaced out for readability
   &.prettyprint {

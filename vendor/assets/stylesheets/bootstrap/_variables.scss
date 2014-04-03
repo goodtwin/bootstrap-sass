@@ -25,7 +25,7 @@ $blueDark:              #202632 !default;
 $green:                 #3f9e7b !default;
 $red:                   #9d261d !default;
 $yellow:                #988545 !default;
-$orange:                #f89406 !default;
+$orange:                #f89a1c !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
 
@@ -78,9 +78,9 @@ $borderRadiusSmall:     3px !default;
 // Tables
 // -------------------------
 $tableBackground:                   transparent !default; // overall background-color
-$tableBackgroundAccent:             #f9f9f9 !default; // for striping
-$tableBackgroundHover:              #f5f5f5 !default; // for hover
-$tableBorder:                       #ddd !default; // table and cell border
+$tableBackgroundAccent:             $grayDark !default; // for striping
+$tableBackgroundHover:              $grayDarker !default; // for hover
+$tableBorder:                       $grayDarker !default; // table and cell border
 
 // Buttons
 // -------------------------
