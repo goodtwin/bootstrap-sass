@@ -20,7 +20,7 @@ module.exports = function( grunt ) {
 				files: [{
 					expand: true,
 					cwd: 'vendor/assets/stylesheets',
-					src: ['*.scss'],
+					src: ['*.scss', '!_*.scss'],
 					dest: 'dist/css',
 					ext: '.css'
 				}]
@@ -50,6 +50,14 @@ module.exports = function( grunt ) {
 		},
 
 		clean: {
+			dist: {
+				files: [
+					{
+						dot: true,
+						src: ['dist/*']
+					}
+				]
+			},
 			ui: {
 				files: [
 					{
@@ -61,6 +69,22 @@ module.exports = function( grunt ) {
 		},
 
 		copy: {
+			dist: {
+				files: [
+					{
+						expand: true,
+						cwd: 'vendor/assets/javascripts/',
+						src: ['**/*'],
+						dest: 'dist/js/'
+					},
+					{
+						expand: true,
+						cwd: 'vendor/assets/images/',
+						src: ['**/*'],
+						dest: 'dist/img/'
+					}
+				]
+			},
 			ui: {
 				files: [
 					{
@@ -94,7 +118,7 @@ module.exports = function( grunt ) {
 
 	grunt.registerTask('compile', ['sass:dist', 'myth:dist']);
 
-	grunt.registerTask('dist', ['compile', 'cssmin:dist']);
+	grunt.registerTask('dist', ['clean:dist', 'copy:dist', 'compile', 'cssmin:dist']);
 
 	grunt.registerTask('build', ['dist', 'clean:ui', 'copy:ui', 'shell:uibuild']);
 

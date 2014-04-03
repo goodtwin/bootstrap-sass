@@ -1,6 +1,6 @@
-/*!
- * Defaults. If you want to change these, probably do it in ./bootstrap.scss instead.
- */
+//
+// Defaults. If you want to change these, probably do it in ./bootstrap.scss instead.
+//
 
 // Grid system and page structure
 $use-scaffolding:	 		true!default;
@@ -50,9 +50,9 @@ $use-hero-unit:			   false!default;
 $use-utilities:			   false!default; // Has to be last to override when necessary
 
 
-/*
- * Reponsive Defaults
- */
+//
+// Reponsive Defaults
+//
 
 $use-responsive-utilities:	false!default;
 
