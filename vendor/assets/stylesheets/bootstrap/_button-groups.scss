@@ -36,7 +36,6 @@
 // Float them, remove border radius, then re-add to first and last elements
 .btn-group > .btn {
   position: relative;
-  @include border-radius(0);
 }
 .btn-group > .btn + .btn {
   margin-left: -1px;
@@ -61,25 +60,20 @@
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
   margin-left: 0;
-  @include border-top-left-radius($baseBorderRadius);
-  @include border-bottom-left-radius($baseBorderRadius);
 }
 // Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it
 .btn-group > .btn:last-child,
 .btn-group > .dropdown-toggle {
-  @include border-top-right-radius($baseBorderRadius);
-  @include border-bottom-right-radius($baseBorderRadius);
+
 }
 // Reset corners for large buttons
 .btn-group > .btn.large:first-child {
   margin-left: 0;
-  @include border-top-left-radius($borderRadiusLarge);
-  @include border-bottom-left-radius($borderRadiusLarge);
+
 }
 .btn-group > .btn.large:last-child,
 .btn-group > .large.dropdown-toggle {
-  @include border-top-right-radius($borderRadiusLarge);
-  @include border-bottom-right-radius($borderRadiusLarge);
+
 }
 
 // On hover/focus/active, bring the proper btn to front
@@ -211,23 +205,22 @@
   display: block;
   float: none;
   max-width: 100%;
-  @include border-radius(0);
 }
 .btn-group-vertical > .btn + .btn {
   margin-left: 0;
   margin-top: -1px;
 }
 .btn-group-vertical > .btn:first-child {
-  @include border-radius($baseBorderRadius $baseBorderRadius 0 0);
+
 }
 .btn-group-vertical > .btn:last-child {
-  @include border-radius(0 0 $baseBorderRadius $baseBorderRadius);
+
 }
 .btn-group-vertical > .btn-large:first-child {
-  @include border-radius($borderRadiusLarge $borderRadiusLarge 0 0);
+
 }
 .btn-group-vertical > .btn-large:last-child {
-  @include border-radius(0 0 $borderRadiusLarge $borderRadiusLarge);
+
 }
 
 }
