@@ -14,7 +14,8 @@ $use-forms:	 	  		true;
 $use-tables:	 	 		true;
 
 // Components: common
-$use-sprites:	 			true; // Be very sure if you say `false`
+$use-sprites:	 			false; // Either this or `$use-icons` needs to be true, but not both.
+$use-icons:	 			  true;  // Either this or `$use-sprites` needs to be true, but not both.
 $use-dropdowns:	   		true;
 $use-wells:	 	  		true;
 $use-component-animations:	true;

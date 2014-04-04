@@ -112,6 +112,67 @@
     &.fade.in { top: 20px; }
   }
 
+  // Tables
+  .table {
+    display: block;
+    padding: 0em;
+  }
+  .table thead,
+  .table tfoot {
+    display: none;
+  }
+  .table tbody {
+    display: block;
+  }
+  .table tr {
+    display: block;
+  }
+
+  .table tr > td {
+    width: 100% !important;
+    display: block;
+    border: none !important;
+    padding: 0.25em 0.75em;
+  }
+  .table td:first-child {
+    font-weight: bold;
+    padding-top: 1em;
+  }
+  .table td:last-child {
+    padding-bottom: 1em;
+  }
+
+  .table-bordered {
+    border: 1px solid $tableBorder;
+    *border-collapse: collapse; // IE7 can't round corners anyway
+    border-left: 0;
+    th,
+    td {
+      border-left: 1px solid $tableBorder;
+      border-top: 1px solid $tableBorder;
+    }
+  }
+
+  .table-condensed {
+    tr > td {
+      padding: 4px 5px;
+    }
+    td:first-child {
+      padding-top: 0.5em;
+    }
+    td:last-child {
+      padding-bottom: 0.5em;
+    }
+  }
+
+  /* Clear BG Colors */
+  .table tr.warning > td,
+  .table tr.error > td,
+  .table tr.info > td,
+  .table tr.success > td {
+    background-color: transparent !important;
+  }
+
 }
 
 
