@@ -95,7 +95,7 @@ hr.soften {
 }
 .jumbotron h1 {
   font-size: 80px;
-  font-weight: bold;
+  font-weight: 300;
   letter-spacing: -1px;
   line-height: 1;
 }
@@ -563,7 +563,7 @@ h2 + .row {
   margin: 15px 0;
   padding: 39px 19px 14px;
   *padding-top: 19px;
-  background-color: #202632;
+  background-color: #293140;
   border: 1px solid #333c4e;
 }
 

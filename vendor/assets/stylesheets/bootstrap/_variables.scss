@@ -21,7 +21,7 @@ $white:                 #fff    !default;
 // Accent colors
 // -------------------------
 $blue:                  #15a4fa !default;
-$blueDark:              #202632 !default;
+$blueDark:              #293140 !default;
 $green:                 #3f9e7b !default;
 $red:                   #9d261d !default;
 $yellow:                #988545 !default;
@@ -111,7 +111,7 @@ $btnInverseBackgroundHighlight:     $grayDarker !default;
 // -------------------------
 $inputBackground:               $white !default;
 $inputBorder:                   #ccc !default;
-$inputBorderRadius:             $baseBorderRadius !default;
+$inputBorderRadius:             2px !default;
 $inputDisabledBackground:       $grayLighter !default;
 $formActionsBackground:         #f5f5f5 !default;
 $inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
@@ -125,7 +125,7 @@ $dropdownDividerTop:            #e5e5e5 !default;
 $dropdownDividerBottom:         $white !default;
 
 $dropdownLinkColor:             $grayDark !default;
-$dropdownLinkColorHover:        $white !default;
+$dropdownLinkColorHover:        $grayLighter !default;
 $dropdownLinkColorActive:       $white !default;
 
 $dropdownLinkBackgroundActive:  $linkColor !default;
@@ -180,28 +180,28 @@ $wellBackground:                  #f5f5f5 !default;
 $navbarCollapseWidth:             979px !default;
 $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
 
-$navbarHeight:                    40px !default;
-$navbarBackgroundHighlight:       #ffffff !default;
-$navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
+$navbarHeight:                    72px !default;
+$navbarBackgroundHighlight:       #293140 !default;
+$navbarBackground:                #202632 !default;
 $navbarBorder:                    darken($navbarBackground, 12%) !default;
 
-$navbarText:                      #777 !default;
-$navbarLinkColor:                 #777 !default;
-$navbarLinkColorHover:            $grayDark !default;
-$navbarLinkColorActive:           $gray !default;
+$navbarText:                      $grayLight !default;
+$navbarLinkColor:                 $white !default;
+$navbarLinkColorHover:            $grayLighter !default;
+$navbarLinkColorActive:           $grayLighter !default;
 $navbarLinkBackgroundHover:       transparent !default;
 $navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
 
 $navbarBrandColor:                $navbarLinkColor !default;
 
 // Inverted navbar
-$navbarInverseBackground:                #111111 !default;
-$navbarInverseBackgroundHighlight:       #222222 !default;
-$navbarInverseBorder:                    #252525 !default;
+$navbarInverseBackground:                $white !default;
+$navbarInverseBackgroundHighlight:       darken($navbarBackground, 5%) !default;
+$navbarInverseBorder:                    $grayLighter !default;
 
 $navbarInverseText:                      $grayLight !default;
-$navbarInverseLinkColor:                 $grayLight !default;
-$navbarInverseLinkColorHover:            $white !default;
+$navbarInverseLinkColor:                 #777 !default;
+$navbarInverseLinkColorHover:            #777 !default;
 $navbarInverseLinkColorActive:           $navbarInverseLinkColorHover !default;
 $navbarInverseLinkBackgroundHover:       transparent !default;
 $navbarInverseLinkBackgroundActive:      $navbarInverseBackground !default;
