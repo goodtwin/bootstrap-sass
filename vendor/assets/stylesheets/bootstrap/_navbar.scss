@@ -347,7 +347,7 @@
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: transparent;
-  color: $grayLighter;
+  color: $orange;
 }
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: $grayLighter;
@@ -356,8 +356,8 @@
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: $grayLighter;
-  border-bottom-color: $grayLighter;
+  border-top-color: $orange;
+  border-bottom-color: $orange;
 }
 
 // Right aligned menus need alt position

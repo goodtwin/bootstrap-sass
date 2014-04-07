@@ -62,13 +62,13 @@ $headingsColor:         inherit !default; // empty to use BS default, $textColor
 // -------------------------
 // Based on 14px font-size and 20px line-height
 
-$fontSizeLarge:         $baseFontSize * 1.25 !default; // ~18px
-$fontSizeSmall:         $baseFontSize * 0.85 !default; // ~12px
-$fontSizeMini:          $baseFontSize * 0.75 !default; // ~11px
+$fontSizeLarge:         $baseFontSize * 1.125 !default; // ~18px
+$fontSizeSmall:         $baseFontSize * 0.75 !default; // ~12px
+$fontSizeMini:          $baseFontSize * 0.6875 !default; // ~11px
 
-$paddingLarge:          11px 19px !default; // 44px
-$paddingSmall:          2px 10px !default;  // 26px
-$paddingMini:           0px 6px !default;   // 22px
+$paddingLarge:          14px 28px !default; // 44px
+$paddingSmall:          6px 12px !default;  // 26px
+$paddingMini:           3px 8px !default;   // 22px
 
 $baseBorderRadius:      4px !default;
 $borderRadiusLarge:     6px !default;
@@ -84,27 +84,27 @@ $tableBorder:                       $grayDarker !default; // table and cell bord
 
 // Buttons
 // -------------------------
-$btnBackground:                     $white !default;
-$btnBackgroundHighlight:            darken($white, 10%) !default;
+$btnBackground:                     $grayLighter !default;
+$btnBackgroundHighlight:            darken($grayLighter, 10%) !default;
 $btnBorder:                         #ccc !default;
 
 $btnPrimaryBackground:              $linkColor !default;
-$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
+$btnPrimaryBackgroundHighlight:     darken($btnPrimaryBackground, 10%) !default;
 
-$btnInfoBackground:                 #5bc0de !default;
-$btnInfoBackgroundHighlight:        #2f96b4 !default;
+$btnInfoBackground:                 #43a7bd !default;
+$btnInfoBackgroundHighlight:        darken($btnInfoBackground, 10%) !default;
 
-$btnSuccessBackground:              #62c462 !default;
-$btnSuccessBackgroundHighlight:     #51a351 !default;
+$btnSuccessBackground:              #45bf7b !default;
+$btnSuccessBackgroundHighlight:     darken($btnSuccessBackground, 10%) !default;
 
-$btnWarningBackground:              lighten($orange, 15%) !default;
-$btnWarningBackgroundHighlight:     $orange !default;
+$btnWarningBackground:              #f58b1a !default;
+$btnWarningBackgroundHighlight:     darken($btnWarningBackground, 10%) !default;
 
-$btnDangerBackground:               #ee5f5b !default;
-$btnDangerBackgroundHighlight:      #bd362f !default;
+$btnDangerBackground:               #e62c2c !default;
+$btnDangerBackgroundHighlight:      darken($btnDangerBackground, 10%) !default;
 
-$btnInverseBackground:              #444 !default;
-$btnInverseBackgroundHighlight:     $grayDarker !default;
+$btnInverseBackground:              $grayDarker  !default;
+$btnInverseBackgroundHighlight:     darken($grayDarker, 10%) !default;
 
 
 // Forms
@@ -121,8 +121,8 @@ $inputHeight:                   $baseLineHeight + 10px; // base line-height + 8p
 // -------------------------
 $dropdownBackground:            $white !default;
 $dropdownBorder:                rgba(0,0,0,.2) !default;
-$dropdownDividerTop:            #e5e5e5 !default;
-$dropdownDividerBottom:         $white !default;
+$dropdownDividerTop:            #e9f0fa !default;
+$dropdownDividerBottom:         #e9f0fa !default;
 
 $dropdownLinkColor:             $grayDark !default;
 $dropdownLinkColorHover:        $white !default;

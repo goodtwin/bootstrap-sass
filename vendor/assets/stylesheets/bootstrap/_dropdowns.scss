@@ -47,14 +47,11 @@
   display: none; // none by default, but block on "open" of the menu
   float: left;
   min-width: 160px;
-  padding: 5px 0;
+  padding: 6px 0;
   margin: 2px 0 0; // override default ul
   list-style: none;
   background-color: $dropdownBackground;
-  border: 1px solid #ccc; // Fallback for IE7-8
-  border: 1px solid $dropdownBorder;
-  *border-right-width: 2px;
-  *border-bottom-width: 2px;
+  border-radius: 3px;
   @include box-shadow(0 5px 10px rgba(0,0,0,.2));
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
@@ -80,9 +77,9 @@
   // Links within the dropdown menu
   > li > a {
     display: block;
-    padding: 3px 20px;
+    padding: 5px 20px;
     clear: both;
-    font-weight: normal;
+    font-weight: 600;
     line-height: $baseLineHeight;
     color: $dropdownLinkColor;
     white-space: nowrap;
