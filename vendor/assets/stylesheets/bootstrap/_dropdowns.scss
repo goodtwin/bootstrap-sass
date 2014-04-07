@@ -71,6 +71,12 @@
     @include nav-divider($dropdownDividerTop, $dropdownDividerBottom);
   }
 
+  > li {
+      &:before {
+          content:none!important;
+      }
+  }
+
   // Links within the dropdown menu
   > li > a {
     display: block;

@@ -20,7 +20,7 @@
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: $grayLighter;
+  background-color: $grayDarker;
 }
 
 // Prevent IE8 from misplacing imgs
@@ -203,10 +203,10 @@
 // ---------
 
 .nav-tabs .dropdown-menu {
-  @include border-radius(0 0 6px 6px); // remove the top rounded corners here since there is a hard edge above the menu
+
 }
 .nav-pills .dropdown-menu {
-  @include border-radius(6px); // make rounded corners match the pills
+
 }
 
 // Default dropdown links
@@ -354,7 +354,7 @@
 }
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus {
-  border-color: $grayLighter $grayDarker $grayLighter $grayLighter;
+  border-color: $grayDarker;
 }
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover,
@@ -374,7 +374,7 @@
 }
 .tabs-right > .nav-tabs > li > a:hover,
 .tabs-right > .nav-tabs > li > a:focus {
-  border-color: $grayLighter $grayLighter $grayLighter $grayDarker;
+  border-color: $grayDarker;
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover,
