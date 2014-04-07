@@ -85,7 +85,7 @@ input[type="color"],
   margin-bottom: $baseLineHeight / 2;;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
-  color: $gray;
+  color: #202632;
   @include border-radius($inputBorderRadius);
   vertical-align: middle;
 }
@@ -119,11 +119,12 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   background-color: $inputBackground;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   @include transition(border linear .2s, box-shadow linear .2s);
 
   // Focus state
   &:focus {
+    background-color: $white;
     border-color: rgba(82,168,236,.8);
     outline: 0;
     outline: thin dotted \9; /* IE6-9 */
@@ -213,7 +214,7 @@ input[type="checkbox"]:focus {
 // Placeholder text gets special styles because when browsers invalidate entire lines if it doesn't understand a selector
 input,
 textarea {
-  @include placeholder();
+  @include placeholder(#202632);
 }
 
 
@@ -387,7 +388,6 @@ select:focus:invalid {
   margin-top: $baseLineHeight;
   margin-bottom: $baseLineHeight;
   background-color: $formActionsBackground;
-  border-top: 1px solid #e5e5e5;
   @include clearfix(); // Adding clearfix to allow for .pull-right button containers
 }
 
@@ -452,16 +452,15 @@ select:focus:invalid {
   .add-on {
     display: inline-block;
     width: auto;
-    height: $baseLineHeight;
+    height: $baseLineHeight * 2;
     min-width: 16px;
-    padding: 4px 5px;
+    padding: 0 5px;
     font-size: $baseFontSize;
     font-weight: normal;
-    line-height: $baseLineHeight;
+    line-height: $baseLineHeight * 2;
     text-align: center;
     text-shadow: 0 1px 0 $white;
-    background-color: $grayLighter;
-    border: 1px solid #ccc;
+    background-color: $grayDarker;
   }
   .add-on,
   .btn,

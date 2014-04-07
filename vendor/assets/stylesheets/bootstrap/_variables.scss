@@ -109,11 +109,11 @@ $btnInverseBackgroundHighlight:     darken($grayDarker, 10%) !default;
 
 // Forms
 // -------------------------
-$inputBackground:               $white !default;
+$inputBackground:               $grayLighter !default;
 $inputBorder:                   #ccc !default;
 $inputBorderRadius:             2px !default;
-$inputDisabledBackground:       $grayLighter !default;
-$formActionsBackground:         #f5f5f5 !default;
+$inputDisabledBackground:       $gray !default;
+$formActionsBackground:         $grayDarker !default;
 $inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
 
 
