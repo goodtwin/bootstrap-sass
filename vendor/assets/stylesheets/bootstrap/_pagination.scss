@@ -51,11 +51,9 @@
 .pagination ul > li:first-child > a,
 .pagination ul > li:first-child > span {
   border-left-width: 1px;
-  @include border-left-radius($baseBorderRadius);
 }
 .pagination ul > li:last-child > a,
 .pagination ul > li:last-child > span {
-  @include border-right-radius($baseBorderRadius);
 }
 
 
@@ -82,11 +80,11 @@
   }
   ul > li:first-child > a,
   ul > li:first-child > span {
-    @include border-left-radius($borderRadiusLarge);
+
   }
   ul > li:last-child > a,
   ul > li:last-child > span {
-    @include border-right-radius($borderRadiusLarge);
+
   }
 }
 
@@ -95,11 +93,11 @@
 .pagination-small {
   ul > li:first-child > a,
   ul > li:first-child > span {
-    @include border-left-radius($borderRadiusSmall);
+
   }
   ul > li:last-child > a,
   ul > li:last-child > span {
-    @include border-right-radius($borderRadiusSmall);
+
   }
 }
 

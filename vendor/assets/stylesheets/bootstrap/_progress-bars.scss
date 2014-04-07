@@ -47,9 +47,7 @@
   overflow: hidden;
   height: $baseLineHeight;
   margin-bottom: $baseLineHeight;
-  @include gradient-vertical(#f5f5f5, #f9f9f9);
-  @include box-shadow(inset 0 1px 2px rgba(0,0,0,.1));
-  @include border-radius($baseBorderRadius);
+  background-color: #f5f5f5;
 }
 
 // Bar of progress
@@ -60,14 +58,11 @@
   float: left;
   font-size: 12px;
   text-align: center;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-  @include gradient-vertical(#149bdf, #0480be);
-  @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));
-  @include box-sizing(border-box);
+  background-color: #149bdf;
   @include transition(width .6s ease);
 }
 .progress .bar + .bar {
-  @include box-shadow(inset 1px 0 0 rgba(0,0,0,.15), inset 0 -1px 0 rgba(0,0,0,.15));
+
 }
 
 // Striped bars
@@ -92,7 +87,7 @@
 
 // Danger (red)
 .progress-danger .bar, .progress .bar-danger {
-  @include gradient-vertical(#ee5f5b, #c43c35);
+  background-color: #ee5f5b;
 }
 .progress-danger.progress-striped .bar, .progress-striped .bar-danger {
   @include gradient-striped(#ee5f5b);
@@ -100,7 +95,7 @@
 
 // Success (green)
 .progress-success .bar, .progress .bar-success {
-  @include gradient-vertical(#62c462, #57a957);
+  background-color: #62c462;
 }
 .progress-success.progress-striped .bar, .progress-striped .bar-success {
   @include gradient-striped(#62c462);
@@ -108,7 +103,7 @@
 
 // Info (teal)
 .progress-info .bar, .progress .bar-info {
-  @include gradient-vertical(#5bc0de, #339bb9);
+  background-color: #5bc0de;
 }
 .progress-info.progress-striped .bar, .progress-striped .bar-info {
   @include gradient-striped(#5bc0de);
@@ -116,7 +111,7 @@
 
 // Warning (orange)
 .progress-warning .bar, .progress .bar-warning {
-  @include gradient-vertical(lighten($orange, 15%), $orange);
+  background-color: lighten($orange, 15%);
 }
 .progress-warning.progress-striped .bar, .progress-striped .bar-warning {
   @include gradient-striped(lighten($orange, 15%));

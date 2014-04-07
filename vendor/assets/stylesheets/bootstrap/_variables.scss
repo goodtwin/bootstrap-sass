@@ -125,7 +125,7 @@ $dropdownDividerTop:            #e5e5e5 !default;
 $dropdownDividerBottom:         $white !default;
 
 $dropdownLinkColor:             $grayDark !default;
-$dropdownLinkColorHover:        $grayLighter !default;
+$dropdownLinkColorHover:        $white !default;
 $dropdownLinkColorActive:       $white !default;
 
 $dropdownLinkBackgroundActive:  $linkColor !default;
@@ -254,9 +254,9 @@ $tooltipBackground:       #000 !default;
 $tooltipArrowWidth:       5px !default;
 $tooltipArrowColor:       $tooltipBackground !default;
 
-$popoverBackground:       #fff !default;
+$popoverBackground:       $grayDark !default;
 $popoverArrowWidth:       10px !default;
-$popoverArrowColor:       #fff !default;
+$popoverArrowColor:       $grayDark !default;
 $popoverTitleBackground:  darken($popoverBackground, 3%) !default;
 
 // Special enhancement for popovers
