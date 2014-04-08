@@ -58,6 +58,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 0;
+  background: #333C4E;
 }
 .nav-list > li > a,
 .nav-list .nav-header {
@@ -65,7 +66,7 @@
   margin-right: -15px;
 }
 .nav-list > li > a {
-  padding: 3px 15px;
+  padding: 5px 15px;
 }
 .nav-list > .active > a,
 .nav-list > .active > a:hover,
@@ -75,6 +76,7 @@
 }
 .nav-list [class^="icon-"],
 .nav-list [class*=" icon-"] {
+  @extend .pull-right;
   margin-right: 2px;
 }
 // Dividers (basically an hr) within the dropdown

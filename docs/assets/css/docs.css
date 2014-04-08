@@ -751,6 +751,13 @@ form.bs-docs-example {
 
 .bs-docs-sidenav {
   width: 228px;
+  margin-top: 30px;
+}
+.bs-docs-sidenav.affix {
+  top: 70px;
+}
+/*.bs-docs-sidenav {
+  width: 228px;
   margin: 30px 0 0;
   padding: 0;
   background-color: #fff;
@@ -780,9 +787,9 @@ form.bs-docs-example {
   -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
      -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
           box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
-}
+}*/
 /* Chevrons */
-.bs-docs-sidenav .icon-chevron-right {
+/*.bs-docs-sidenav .icon-chevron-right {
   float: right;
   margin-top: 2px;
   margin-right: -6px;
@@ -805,7 +812,7 @@ form.bs-docs-example {
   position: absolute;
   top: auto;
   bottom: 270px;
-}
+}*/
 
 
 
